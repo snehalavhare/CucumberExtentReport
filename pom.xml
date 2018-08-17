@@ -42,10 +42,17 @@
   
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
-
-
-		<dependency>
-
+		
+		
+<dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8</version>
+  <scope>test</scope>
+</dependency>	
+				
+		
+		<dependency>	
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.7.0</version>
@@ -96,7 +103,7 @@
           <scope>test</scope>
       </dependency>
       
-      <dependency>
+    <dependency>
 	<groupId>com.vimalselvam</groupId>
 	<artifactId>cucumber-extentsreport</artifactId>
 	<version>3.0.2</version>
@@ -107,6 +114,23 @@
 	<artifactId>extentreports</artifactId>
 	<version>3.1.2</version>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-testng</artifactId>
+	    <version>2.0.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+<dependency>
+<groupId>com.relevantcodes</groupId>
+<artifactId>extentreports</artifactId>
+<version>2.41.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
 	
       
 	</dependencies>

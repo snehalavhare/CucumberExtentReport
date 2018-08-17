@@ -1,5 +1,7 @@
 package com.serenity.test.stepDefinition;
 
+import org.testng.annotations.Listeners;
+
 import com.serenity.test.steps.serenity.EndUserSteps;
 
 import cucumber.api.java.en.And;
@@ -8,6 +10,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
+//@Listeners("ITestExtentListener")
 public class stepDefinition 
 {
 	
@@ -19,7 +22,6 @@ public class stepDefinition
 	{
 		endsteps.openHomePage();
 	}
-	
 	
 	@When("User selects Flights Enters data and search")
 	public void User_selects_Flights_Enters_data_and_search()

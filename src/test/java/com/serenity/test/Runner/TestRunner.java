@@ -4,11 +4,13 @@ import java.io.File;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(Cucumber.class)
@@ -18,17 +20,17 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
 		)
 
+
 public class TestRunner 
 {
-	
-	@AfterClass
-	public static void wrieExtentReport()
-	{
-		Reporter.loadXMLConfig(new File(TestBase.TestBase.getExtentReportConfigPath()));
-		Reporter.setSystemInfo("user", System.getProperty("user.name"));
-        Reporter.setSystemInfo("os", "Windows");
-        Reporter.setTestRunnerOutput("Sample test runner output message");
-	}
+//	
+//	@AfterClass
+//	public static void wrieExtentReport()
+//	{
+//		Reporter.loadXMLConfig(new File(TestBase.TestBase.getExtentReportConfigPath()));
+//		Reporter.setSystemInfo("user", System.getProperty("user.name"));
+//        Reporter.setSystemInfo("os", "Windows");
+//        Reporter.setTestRunnerOutput("Sample test runner output message");
+//	}
 }
-
 
